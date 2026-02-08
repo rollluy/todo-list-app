@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <title>To Do List App</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <img class="background-img" src="request menu bg.PNG" alt="Background">
+
+      <div class="content-overlay">
+        <div class="input-container">
+          <input type="text" id="taskInput">
+          <button id="addTaskButton">Add Task</button>
+        </div>
+
+        <div class="list-container">
+          <ul id="taskList"></ul>
+        </div>
+
+        <div id="emptyState" class="empty-state" style="display: none;">
+          No active requests
+        </div>
+      </div>
+    </div>
+
+    <!--<p id="info"></p>-->
+  </body>
+  <script src="./renderer.js"></script>
+</html>
